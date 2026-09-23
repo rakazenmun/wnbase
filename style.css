@@ -20,7 +20,7 @@ header h1 {
   font-size: 2rem;
 }
 
-.ionplus-btn {
+.interactive-btn {
   display: inline-block;
   padding: 0.9rem 2.25rem;
   font-size: 1.05rem;
@@ -35,12 +35,36 @@ header h1 {
   transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
 }
 
-.ionplus-btn:hover {
+.interactive-btn:hover {
   background-color: #3a63e0;
   box-shadow: 0 6px 18px rgba(79, 124, 255, 0.45);
 }
 
-.ionplus-btn:active {
+.interactive-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(79, 124, 255, 0.35);
+}
+.static-btn {
+  display: inline-block;
+  padding: 0.9rem 2.25rem;
+  font-size: 1.05rem;
+  background-color: #ad9b34;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(58, 79, 141, 0.35);
+  transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.static-btn:hover {
+  background-color: #3a63e0;
+  box-shadow: 0 6px 18px rgba(79, 124, 255, 0.45);
+}
+
+.static-btn:active {
   transform: scale(0.97);
   box-shadow: 0 2px 8px rgba(79, 124, 255, 0.35);
 }
