@@ -55,16 +55,16 @@ header h1 {
   font-weight: 600;
   font-family: inherit;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(58, 79, 141, 0.35);
+  box-shadow: 0 4px 14px rgba(158, 143, 84, 0.35);
   transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
 }
 
 .static-btn:hover {
   background-color: #9e8f54;
-  box-shadow: 0 6px 18px rgba(79, 124, 255, 0.45);
+  box-shadow: 0 6px 18px rgba(158, 143, 84, 0.45);
 }
 
 .static-btn:active {
   transform: scale(0.97);
-  box-shadow: 0 2px 8px rgba(79, 124, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(158, 143, 84, 0.35);
 }
