@@ -70,6 +70,14 @@ header h1 {
   background-color: #9e8f54;
   box-shadow: 0 6px 18px rgba(158, 143, 84, 0.45);
 }
+.disabled-btn {
+    background-color: #cccccc !important; 
+    color: #888888 !important;     
+    cursor: not-allowed;   
+    text-decoration: none;
+    border-color: #bbbbbb !important;
+    box-shadow: none !important;
+}
 
 .static-btn:active {
   transform: scale(0.97);
