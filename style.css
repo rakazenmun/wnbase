@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
   margin: 0;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("background.jpg") center / cover fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/background.webp") center / cover fixed;
   font-family: system-ui, sans-serif;
 }
 
@@ -45,6 +45,21 @@ p {
   font-size: 1.1rem;
 }
 
+.school-link {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.easter-egg {
+  width: fit-content;
+  margin-top: 2rem;
+  padding: 0.75rem 1rem;
+  color: #ffe28a;
+  background: rgba(255, 190, 70, 0.12);
+  border: 1px solid rgba(255, 226, 138, 0.45);
+  border-radius: 8px;
+}
+
 .links {
   display: grid;
   gap: 0.75rem;
@@ -68,6 +83,66 @@ p {
 .links .disabled {
   color: rgba(255, 255, 255, 0.5);
   pointer-events: none;
+}
+
+.events-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.event-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  min-height: 100px;
+  padding: 1rem 1.25rem;
+  background: rgba(7, 17, 31, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.event-card.upcoming {
+  border-color: rgba(100, 175, 255, 0.7);
+}
+
+.event-card h2,
+.event-card p {
+  margin: 0;
+}
+
+.event-card h2 {
+  font-size: 1.15rem;
+}
+
+.event-card p {
+  margin-top: 0.25rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+}
+
+.event-date {
+  display: grid;
+  width: 62px;
+  min-width: 62px;
+  height: 76px;
+  place-content: center;
+  gap: 0.1rem;
+  text-align: center;
+  background: rgba(100, 175, 255, 0.18);
+  border-radius: 6px;
+}
+
+.event-date strong {
+  font-size: 1.75rem;
+  line-height: 0.9;
+}
+
+.event-date span,
+.event-date small {
+  font-size: 0.62rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 small {

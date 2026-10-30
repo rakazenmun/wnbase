@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wnbase - 404</title>
+  <link rel="preload" as="image" href="/background.webp" fetchpriority="high">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/projects/">Projects</a>
+      <a href="/about/">About</a>
+      <a href="/events/">Events</a>
+      <a id="secret-link" href="/">Home</a>
+    </nav>
+
+    <h1>404</h1>
+    <p>this page does not exist.</p>
+    <p id="reload-secret" class="easter-egg" hidden>2 day</p>
+  </main>
+  <script>
+    const reloadCount = Number(sessionStorage.getItem("wnbase-404-reloads") || 0) + 1;
+    sessionStorage.setItem("wnbase-404-reloads", reloadCount);
+
+    if (reloadCount >= 8) {
+      document.getElementById("reload-secret").hidden = false;
+    }
+
+    document.getElementById("secret-link").addEventListener("click", () => {
+      sessionStorage.setItem("wnbase-secret", "found");
+    });
+  </script>
+</body>
+</html>

@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>wnbase</title>
+  <link rel="preload" as="image" href="/background.webp" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
   <main>
     <nav>
-      <a class="active" href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
+      <a class="active" href="/">Home</a>
+      <a href="/projects/">Projects</a>
+      <a href="/about/">About</a>
+      <a href="/events/">Events</a>
     </nav>
 
     <h1>wnbase</h1>
     <p>personal website by William.</p>
-    <div class="social-links">
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-    </div>
+    <p id="easter-egg" class="easter-egg" hidden>1 one</p>
   </main>
+  <script>
+    if (sessionStorage.getItem("wnbase-secret") === "found") {
+      document.getElementById("easter-egg").hidden = false;
+      sessionStorage.removeItem("wnbase-secret");
+    }
+  </script>
 </body>
 </html>
